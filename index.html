@@ -5,25 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio website</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- https://boxicons.com/usage -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- https://github.com/mattboldt/typed.js -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
-            <nav>
+            <div class="nav">
                 <a href="#" class="logo"><img src="images/logo.png"></a>
-                <ul>
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-text">
-                <p>Software Developer</p>
-                <h1>Hi, I'm Dung Bui (<span>Ben</span>) <br> from Viet Nam.</h1>
+                <nav>
+                    <a href="#" style="--i:1" class="active">Home</a>
+                    <a href="#" style="--i:2" >About</a>
+                    <a href="#" style="--i:3" >Project</a>
+                    <a href="#" style="--i:4" >Contact</a>
+                </nav>
             </div>
+            <div class="header-text">
+                <span class="header-text-position"></span>
+                <br>
+                <h1 style="--i:1" >Hi, I'm Dung Bui (<span>Ben</span>) <br> from Viet Nam.</h1>
+            </div>
+            <div class="home-icon">
+                <a href="#"><i style="--i:2"  class='bx bxl-facebook' ></i></a>
+                <a href="#"><i style="--i:3"  class='bx bxl-instagram' ></i></a>
+                <a href="#"><i style="--i:4"  class='bx bxl-github' ></i></a>
+                <a href="#"><i style="--i:5"  class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="#" style="--i:6" class="btn-about">More about me</a>
         </div>
     </div>
-
+    <script src="main.js"></script>
 </body>
 </html>
