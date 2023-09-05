@@ -243,10 +243,39 @@ flex-wrap: wrap;
 }
 
 .about-col-2 h1 {
+    color: #0CC0DF;
     font-size: 60px;
     font-weight: 600;
 }
 
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
 
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
 
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -8px;
+    background: #0CC0DF;
+    transition: 0.5s;
+    position: absolute;
+}
 
+.tab-links.active::after {
+    width: 50%;
+}
+
+.tab-links:hover::after{
+    width: 50%;
+}
